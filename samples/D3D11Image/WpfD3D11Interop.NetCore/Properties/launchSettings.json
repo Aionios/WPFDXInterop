@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "WpfD3D11Interop.NetCore": {
+      "commandName": "Project"
+    }
+  }
+}

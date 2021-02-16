@@ -10,7 +10,7 @@
     #include <d3dx11.h>
 #else // Windows SDK
     #include <d3d11.h>
-    #include <D3Dcompiler.h>
+    #include <d3dcompiler.h>
 #endif 
 
 /// <summary>

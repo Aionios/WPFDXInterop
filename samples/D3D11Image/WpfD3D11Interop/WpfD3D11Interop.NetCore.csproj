@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{19855A82-A7EC-4E95-B0C4-B1A2356732B7}</ProjectGuid>
+    <ProjectGuid>{BBB9B69E-7175-4466-A9EF-683BD4137B30}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Microsoft.Samples.Wpf.D3D11Interop</RootNamespace>
@@ -51,6 +51,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Wpf.Interop.DirectX, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\src\x64\Debug\Microsoft.Wpf.Interop.DirectX.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -112,16 +116,6 @@
     <Resource Include="Images\radiobutton_off.png" />
     <Resource Include="Images\radiobutton_on.png" />
     <Resource Include="Images\Slider.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\src\Microsoft.Wpf.Interop.DirectX\Microsoft.Wpf.Interop.DirectX_winsdk.vcxproj">
-      <Project>{157a478d-fe02-4eb2-bd7c-8cf3bf1cb9a2}</Project>
-      <Name>Microsoft.Wpf.Interop.DirectX_winsdk</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\D3D11Visualization\D3DVisualization_winsdk.vcxproj">
-      <Project>{d73dce48-0dbc-40fe-ac89-2c06af01060b}</Project>
-      <Name>D3DVisualization_winsdk</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

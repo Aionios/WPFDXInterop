@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Background.jpg" />
+    <None Remove="Images\Checkbox_checked.png" />
+    <None Remove="Images\Checkbox_unchecked.png" />
+    <None Remove="Images\MagnifyingGlass.PNG" />
+    <None Remove="Images\radiobutton_off.png" />
+    <None Remove="Images\radiobutton_on.png" />
+    <None Remove="Images\Slider.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\Microsoft.Wpf.Interop.DirectX\Microsoft.Wpf.NetCore.Interop.DirectX_winsdk.vcxproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Background.jpg" />
+    <Resource Include="Images\Checkbox_checked.png" />
+    <Resource Include="Images\Checkbox_unchecked.png" />
+    <Resource Include="Images\MagnifyingGlass.PNG" />
+    <Resource Include="Images\radiobutton_off.png" />
+    <Resource Include="Images\radiobutton_on.png" />
+    <Resource Include="Images\Slider.png" />
+  </ItemGroup>
+
+</Project>
